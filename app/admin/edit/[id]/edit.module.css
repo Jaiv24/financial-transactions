@@ -30,7 +30,7 @@
     background: #f0f0f0;
   }
   
-  button {
+  .button {
     padding: 10px;
     background: #0070f3;
     color: white;
@@ -39,7 +39,7 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .button:hover {
     background: #005bb5;
   }
   
