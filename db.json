@@ -23,17 +23,17 @@
     },
     {
       "id": "4",
-      "transaction_title": "Phe",
-      "amount": 89,
-      "transaction_type": "Income",
-      "date": "2025-04-26"
+      "transaction_title": "Phone ",
+      "amount": 50,
+      "transaction_type": "Expense",
+      "date": "2025-04-30"
     },
     {
       "id": "5",
-      "transaction_title": "rew r4w",
-      "amount": 6666,
-      "transaction_type": "Income",
-      "date": "2025-04-12"
+      "transaction_title": "Car",
+      "amount": 15000,
+      "transaction_type": "Expense",
+      "date": "2025-04-15"
     }
   ]
 }

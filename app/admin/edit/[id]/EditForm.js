@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { updateTransaction } from './actions';
-import styles from './edit.module.css';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { updateTransaction } from "./actions";
+import styles from "./edit.module.css";
 
 export default function EditForm({ transaction }) {
   const [errors, setErrors] = useState([]);
@@ -12,19 +12,21 @@ export default function EditForm({ transaction }) {
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
-    const transaction_title = formData.get('transaction_title');
-    const amount = parseFloat(formData.get('amount'));
-    const transaction_type = formData.get('transaction_type');
+    const transaction_title = formData.get("transaction_title");
+    const amount = parseFloat(formData.get("amount"));
+    const transaction_type = formData.get("transaction_type");
 
     // Validation
     const newErrors = [];
     if (transaction_title.length < 3 || transaction_title.length > 50) {
-      newErrors.push('Transaction title must be between 3 and 50 characters.');
+      newErrors.push("Transaction title must be between 3 and 50 characters.");
     }
     if (isNaN(amount) || amount <= 0 || amount >= 10000) {
-      newErrors.push('Amount must be a positive number less than 10,000.');
+      newErrors.push(
+        "Amount must be a number greater than 0 and less than 10,000."
+      );
     }
-    if (transaction_type !== 'Income' && transaction_type !== 'Expense') {
+    if (transaction_type !== "Income" && transaction_type !== "Expense") {
       newErrors.push("Transaction type must be either 'Income' or 'Expense'.");
     }
 
@@ -33,20 +35,19 @@ export default function EditForm({ transaction }) {
       return;
     }
 
-    // Submit to API via server action
     const updatedTransaction = {
-      id: formData.get('id'),
+      id: formData.get("id"),
       transaction_title,
       amount,
       transaction_type,
-      date: formData.get('date'),
+      date: formData.get("date"),
     };
 
     try {
       await updateTransaction(transaction.id, updatedTransaction);
-      router.push('/admin');
+      router.push("/admin");
     } catch (error) {
-      setErrors(['Error updating transaction: ' + error.message]);
+      setErrors(["Error updating transaction: " + error.message]);
     }
   }
 
@@ -62,7 +63,13 @@ export default function EditForm({ transaction }) {
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.field}>
           <label htmlFor="id">ID</label>
-          <input type="text" id="id" name="id" defaultValue={transaction.id} readOnly />
+          <input
+            type="text"
+            id="id"
+            name="id"
+            defaultValue={transaction.id}
+            readOnly
+          />
         </div>
         <div className={styles.field}>
           <label htmlFor="transaction_title">Title</label>
