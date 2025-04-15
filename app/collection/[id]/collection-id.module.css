@@ -1,0 +1,32 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .back:hover {
+    text-decoration: underline;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    background: #f0f0f0;
+  }
