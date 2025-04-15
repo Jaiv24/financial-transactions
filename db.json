@@ -1,25 +1,39 @@
 {
-    "transactions": [
-      {
-        "id": "1",
-        "transaction_title": "Salary",
-        "amount": 5000,
-        "transaction_type": "Income",
-        "date": "2025-04-01"
-      },
-      {
-        "id": "2",
-        "transaction_title": "Rent",
-        "amount": 1200,
-        "transaction_type": "Expense",
-        "date": "2025-04-02"
-      },
-      {
-        "id": "3",
-        "transaction_title": "Groceries",
-        "amount": 150,
-        "transaction_type": "Expense",
-        "date": "2025-04-03"
-      }
-    ]
-  }
+  "transactions": [
+    {
+      "id": "1",
+      "transaction_title": "Salary",
+      "amount": 5000,
+      "transaction_type": "Income",
+      "date": "2025-04-01"
+    },
+    {
+      "id": "2",
+      "transaction_title": "Rent",
+      "amount": 1200,
+      "transaction_type": "Expense",
+      "date": "2025-04-02"
+    },
+    {
+      "id": "3",
+      "transaction_title": "Groceries",
+      "amount": 140,
+      "transaction_type": "Expense",
+      "date": "2025-04-03"
+    },
+    {
+      "id": "4",
+      "transaction_title": "Phe",
+      "amount": 89,
+      "transaction_type": "Income",
+      "date": "2025-04-26"
+    },
+    {
+      "id": "5",
+      "transaction_title": "rew r4w",
+      "amount": 6666,
+      "transaction_type": "Income",
+      "date": "2025-04-12"
+    }
+  ]
+}

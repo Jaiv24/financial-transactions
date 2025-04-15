@@ -1,50 +1,50 @@
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .field {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .field label {
-    margin-bottom: 5px;
-  }
-  
-  .field input,
-  .field select {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .field input[readOnly] {
-    background: #f0f0f0;
-  }
-  
-  .button {
-    padding: 10px;
-    background: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background: #005bb5;
-  }
-  
-  .errorList {
-    color: #d00;
-    margin-bottom: 15px;
-    padding-left: 20px;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 5px;
+}
+
+.field input,
+.field select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.field input[readOnly] {
+  background: #f0f0f0;
+}
+
+.button {
+  padding: 10px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #005bb5;
+}
+
+.errorList {
+  color: #d00;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
